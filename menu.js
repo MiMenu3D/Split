@@ -1,6 +1,6 @@
-// Menu Handmade Unified v1.16
+// Menu Version Half Split 1.00
 // Generated as part of the AR refactor.
-// version Handmade Unified 1.16
+// Version Half Split 1.00
 
 // Menu principal y UI general
 window.RepoFusion = window.RepoFusion || {};
