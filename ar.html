@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>AR Session - Version Split 1.01</title>
+  <title>AR Session - Version Split 1.02</title>
   
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://unpkg.com/three@0.139.2/examples/js/loaders/RGBELoader.js"></script>
@@ -379,3 +379,17 @@
         envMode = "hdr";
       }
     };
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const modelIdx = sessionStorage.getItem("modelo_actual");
+      const models = [
+        "Plato_01.glb","Plato_02.glb","Plato_03.glb","Plato_04.glb",
+        "Plato_05.glb","Plato_06.glb","Plato_07.glb","Plato_08.glb",
+        "Plato_09.glb","Plato_10.glb","Plato_11.glb","Plato_12.glb",
+        "Plato_13.glb","Plato_14.glb","Plato_15.glb"
+      ];
+      if (modelIdx !== null) startAR(models[modelIdx]);
+    });
+  </script>
+</body>
+</html>
