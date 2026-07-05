@@ -1,0 +1,6 @@
+Split de 3 archivos: index.html, ar.html y menú.js (que no sé por qué, pero aún hace falta).
+
+- Menú perfecto, index.html.
+- AR a 0%. no se abre nada. Pantalla en blanco, sin debug, sin botón HDR, sin nada.
+- Backbutton de vuelta desde ar.html a index.html funciona perfectamente, pero sin history current.
+- NOTA: Aún necesita los viejos archivos xr-config.js, bridge.js y menu.js para funcionar. Desaparecerán en la 1.01.
