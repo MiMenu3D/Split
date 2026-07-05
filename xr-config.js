@@ -1,4 +1,4 @@
-// 8th Wall image target configuration
+// 8th Wall image target configuration - Version Half Split 1.00
 // Only configure the tracker, do not auto-start the 8th Wall scene.
 window.xrConfigData = {
   imageTargetData: [
