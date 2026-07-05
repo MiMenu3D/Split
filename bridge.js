@@ -1,5 +1,5 @@
 const BRIDGE_VERSION = "Bridge Handmade Unified v1.5";
-// version 87.3 Handmade Unified v1.5
+// version Half Split v1.00
 
 const panel = document.createElement("div");
 panel.id = "bridgeDebugPanel";
