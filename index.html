@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Version Split 1.03</title>
+<title>Version Split 1.04</title>
 
 <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 <script src="https://unpkg.com/three@0.139.2/examples/js/loaders/RGBELoader.js"></script>
@@ -100,7 +100,7 @@ a-scene { width:100%; height:100%; }
 <div id="mvContainer"></div>
 
 <div id="startScreen">
-  <div id="prueba">Version Split 1.03</div>
+  <div id="prueba">Version Split 1.04</div>
   <div id="label">Plato 01</div>
 
   <div class="arrowContainer">
@@ -197,10 +197,12 @@ a-scene { width:100%; height:100%; }
     }
 
         window.addEventListener("DOMContentLoaded", () => {
-      const saved = sessionStorage.getItem("modelo_actual");
-      if (saved !== null) current = parseInt(saved);
-      createMV();
-    });
+          // Reset al plato 0 al actualizar página (F5)
+          if (performance.navigation.type === 1) {
+            sessionStorage.removeItem("modelo_actual");
+          }
+          createMV();
+        });
   </script>
 </body>
 </html>
