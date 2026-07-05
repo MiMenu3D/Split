@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>AR Session - Version Split 1.04</title>
+  <title>AR Session - Version Split 1.05</title>
   
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://unpkg.com/three@0.139.2/examples/js/loaders/RGBELoader.js"></script>
+  <script src="bundle.js"></script>
   
   <style>
     html, body { margin: 0; padding: 0; overflow: hidden; width: 100vw; height: 100vh; background: transparent; }
@@ -184,8 +185,8 @@
     }
 
     function loadXR8Assets() {
-      loadScript({ id: "runtimeScript", src: "./external/runtime/runtime.js" });
-      loadScript({ id: "xrScript", src: "./external/xr/xr.js", async: true, attrs: { "data-preload-chunks": "face, slam" } });
+      loadScript({ id: "runtimeScript", src: "external/runtime/runtime.js" });
+      loadScript({ id: "xrScript", src: "external/xr/xr.js", async: true, attrs: { "data-preload-chunks": "face, slam" } });
       loadScript({ id: "xrConfigScript", src: "xr-config.js" });
       loadScript({ id: "bridgeScript", src: "bridge.js?t=" + Date.now() });
     }
